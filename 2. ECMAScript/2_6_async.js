@@ -60,3 +60,5 @@ async function asyncExample() {
     console.log(`a: ${a}, b: ${b}, c: ${c}`);
 }
 asyncExample();
+// Error on await
+// a: 42, b: 42, c: undefined
