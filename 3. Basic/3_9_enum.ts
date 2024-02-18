@@ -116,17 +116,19 @@ console.log(east); // EAST
 
 // const center: Direction4 = 'CENTER'; // error TS2322: Type '"CENTER"' is not assignable to type 'Direction4'.
 
+
 enum Direction5 {
     East = 'EAST',
     West = 'WEST',
     South = 'SOUTH',
     North = 'NORTH'
 }
+// ! 리터럴 타입과 동일 (하나의 값만 갖는 타임: EAST2)
 type EAST2 = Direction5.East;
-
 const east2: EAST2 = Direction5.East;
 console.log(east2); // EAST
 
+// ! 열거형 표현과 동일
 const east3: Direction5 = Direction5.East;
 console.log(east3); // EAST
 
